@@ -1,8 +1,6 @@
-
-
-快捷项目框架 包括pinia http manifest uni_modules pages.json 和一些基础配置
-包括 扫码 通讯录页面
-不需要的可以删掉
+# 快捷项目框架 包括pinia http manifest uni_modules pages.json 和一些基础配置
+# 包括 扫码 通讯录页面 国家地区选择
+# 不需要的可以删掉
 
 # uni-nav-bar 使用示例
 ```html
