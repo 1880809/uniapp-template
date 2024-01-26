@@ -1,4 +1,5 @@
-快捷项目框架 包括pinia http manifest uni_modules pages.json 和一些基础配置  
+uniapp 快捷基础项目框架 下载下来就可以用
+包括pinia http manifest uni_modules pages.json 和一些基础配置  
 包括 扫码 通讯录页面 国家地区选择  
 不需要的可以删掉  
 
