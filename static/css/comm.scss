@@ -1,0 +1,244 @@
+// 状态栏高度 height: var(--status-bar-height);
+// 内容区域距离顶部的距离  top: var(--window-top);
+// 内容区域距离底部的距离  bottom: var(--window-bottom);
+// 底部安全距离 env(safe-area-inset-bottom)
+
+.bar-height{
+  height: var(--status-bar-height);
+}
+.bar-height-ios{
+  height: calc(var(--status-bar-height / 2));
+}
+
+view{
+  color: #333333;
+  font-size: 26rpx;
+}
+.clear {
+  clear: both;
+}
+.fw {
+  overflow: hidden;
+}
+.dl {
+  display: block;
+}
+.dn {
+  display: none;
+}
+.cur {
+  cursor: pointer;
+}
+.wzfw {
+  text-overflow: Ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+input {
+  font-size: 28rpx;
+}
+
+/*全局背景色*/
+body, uni-page-body{
+  background: #F4F5F7;
+}
+.body{
+  padding-bottom: 60rpx;
+  overflow: hidden;
+}
+view, text{
+  font-size: 26rpx;
+  color: #333333;
+}
+input{
+  font-size: 28rpx;
+  color: #333333;
+}
+
+/* 自定义导航栏的样式 */
+.need-edit{
+  // .uni-navbar__header-btns-right{
+  //  display: none !important;
+  //}
+   .uni-navbar__header-btns-left{
+    width: auto !important;
+  }
+  .uni-navbar__header-container{
+    padding: 0 !important;
+  }
+  .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 20rpx;
+    .input-view{
+      flex: 3;
+      text-align: center;
+      font-size: 32rpx;
+    }
+    .right{
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+/* 调整Toast通知中的文本字体大小 */
+uni-toast .uni-simple-toast__text {
+  font-size: 30rpx !important;
+}
+
+/* 占位 */
+.height{
+  width: 100vw;
+  height: 120rpx;
+}
+
+
+// uview 按钮样式
+.u-button {
+  height: 90rpx !important;
+
+  &.u-button--square {
+    border-radius: 14rpx !important;
+  }
+
+  .u-button__text {
+    font-size: 30rpx !important;
+    color: #FFFFFF;
+  }
+}
+.u-button-1794DA{
+  .u-button__text {
+    color: #1794DA;
+  }
+}
+
+// uni. 带有icon的toast样式, 没有带icon的不影响
+.uni-toast {
+  width: auto !important;
+  border-radius: 20rpx;
+  padding: 15rpx 40rpx 12rpx;
+  .uni-toast__icon{
+    margin: 0 0 3rpx 0 !important;
+  }
+  .uni-toast__content{
+    margin: 0 0 0 0 !important;
+    font-size: 28rpx !important;
+  }
+  .uni-loading{
+    vertical-align: middle !important;
+  }
+  //background-color: transparent !important;
+}
+.uni-sample-toast {
+  width: auto !important;
+  max-width: 100%;
+  border-radius: 20rpx;
+  .uni-simple-toast__text{
+    padding: 15rpx 30rpx;
+    margin: 0 0 0 0 !important;
+    font-size: 26rpx !important;
+  }
+}
+
+
+// uni.showModal 按钮样式
+.uni-modal {
+  border-radius: 30rpx;
+
+  .uni-modal__title {
+    font-size: 33rpx;
+  }
+
+  .uni-modal__bd {
+    padding: 20rpx 20rpx 50rpx;
+    color: #515151;
+  }
+
+  .uni-modal__btn:after {
+    content: ' ';
+    border-left: 2rpx solid #F4F4F4;
+    color: transparent;
+  ;
+  }
+
+  .uni-modal__ft:after {
+    content: ' ';
+    border-top: 2rpx solid #F4F4F4;
+    color: transparent;
+  ;
+  }
+
+  .uni-modal__btn {
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+  }
+}
+
+// <u-collapse> 样式
+.collapse-game-details{
+  .u-cell__body{
+    padding: 0 30rpx 0 0 !important;
+  }
+  .u-cell__left-icon-wrap{
+    margin-right: 0 !important;
+  }
+  .u-line{
+    border: none !important;
+  }
+  .u-cell--clickable{
+    background: #FFFFFF !important;
+  }
+  .u-cell{
+    margin: 0 10rpx;
+  }
+  .u-collapse-item__content__text{
+    padding: 0 !important;
+  }
+  .u-cell__right-icon-wrap--down{
+    transform: rotate(180deg) !important;
+  }
+  &.active{
+    .u-cell{
+      border-bottom:2rpx solid #EEEEEE !important;
+    }
+  }
+}
+
+
+uni-input{
+  flex: 1;
+}
+
+//uview的 u-loading-icon
+.u-loading-icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.easyinput{
+  .uni-input-placeholder{
+    line-height: 50rpx !important;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
