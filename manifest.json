@@ -34,6 +34,19 @@
         "statusbar" : {
             "immersed" : false
         },
+        "safearea": {                              //可选，JSON对象，安全区域配置
+            "background": "#RRGGBB",                                //可选，字符串类型，#RRGGBB格式，安全区域背景颜色
+            "backgroundDark": "#RRGGBB",                            //可选，字符串类型，#RRGGBB格式，暗黑模式安全区域背景颜色
+            "bottom": {                                             //可选，JSON对象，底部安全区域配置
+                "offset": "none"                                            //可选，字符串类型，安全区域偏移值，可取值auto、none
+            },
+            "left": {                                               //可选，JSON对象，左侧安全区域配置
+                "offset": "none"                                            //可选，字符串类型，安全区域偏移值，可取值auto、none
+            },
+            "right": {                                              //可选，JSON对象，左侧安全区域配置
+                "offset": "none"                                            //可选，字符串类型，安全区域偏移值，可取值auto、none
+            }
+        },
         "usingComponents" : true,
         "nvueCompiler" : "uni-app",
         "nvueStyleCompiler" : "uni-app",
@@ -86,59 +99,33 @@
                 "iosStyle" : "common",
                 "androidStyle" : "default",
                 "android" : {
-                    "hdpi" : "Launch.png",
-                    "xhdpi" : "Launch.png",
-                    "xxhdpi" : "Launch.png"
+                    "hdpi" : "",
+                    "xhdpi" : "",
+                    "xxhdpi" : ""
                 },
                 "useOriginalMsgbox" : false,
                 "ios" : {
-                    "iphone" : {
-                        "portrait-896h@3x" : "Launch.png",
-                        "landscape-896h@3x" : "Launch.png",
-                        "portrait-896h@2x" : "Launch.png",
-                        "landscape-896h@2x" : "Launch.png",
-                        "iphonex" : "Launch.png",
-                        "retina55" : "Launch.png",
-                        "retina47" : "Launch.png",
-                        "retina40" : "Launch.png",
-                        "retina35" : "Launch.png",
-                        "iphonexl" : "Launch.png",
-                        "retina55l" : "Launch.png",
-                        "retina47l" : "Launch.png",
-                        "retina40l" : "Launch.png"
-                    }
+                    "iphone" : {}
                 }
             },
             "icons" : {
                 "android" : {
-                    "hdpi" : "unpackage/res/icons/72x72.png",
-                    "xhdpi" : "unpackage/res/icons/96x96.png",
-                    "xxhdpi" : "unpackage/res/icons/144x144.png",
-                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                    "hdpi" : "",
+                    "xhdpi" : "",
+                    "xxhdpi" : "",
+                    "xxxhdpi" : ""
                 },
                 "ios" : {
                     "iphone" : {
-                        "app@2x" : "unpackage/res/icons/120x120.png",
-                        "app@3x" : "unpackage/res/icons/180x180.png",
-                        "notification@2x" : "unpackage/res/icons/40x40.png",
-                        "notification@3x" : "unpackage/res/icons/60x60.png",
-                        "settings@2x" : "unpackage/res/icons/58x58.png",
-                        "settings@3x" : "unpackage/res/icons/87x87.png",
-                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
-                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                        "app@2x" : "",
+                        "app@3x" : "",
+                        "settings@2x" : "",
+                        "settings@3x" : "",
+                        "spotlight@2x" : "",
+                        "spotlight@3x" : ""
                     },
-                    "appstore" : "unpackage/res/icons/1024x1024.png",
-                    "ipad" : {
-                        "app" : "unpackage/res/icons/76x76.png",
-                        "app@2x" : "unpackage/res/icons/152x152.png",
-                        "notification" : "unpackage/res/icons/20x20.png",
-                        "notification@2x" : "unpackage/res/icons/40x40.png",
-                        "proapp@2x" : "unpackage/res/icons/167x167.png",
-                        "settings" : "unpackage/res/icons/29x29.png",
-                        "settings@2x" : "unpackage/res/icons/58x58.png",
-                        "spotlight" : "unpackage/res/icons/40x40.png",
-                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
-                    }
+                    "appstore" : "",
+                    "ipad" : {}
                 }
             }
         },

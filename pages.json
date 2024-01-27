@@ -21,6 +21,15 @@
         "navigationBarTitleText": "通讯录列表",
         "enablePullDownRefresh": false
       }
+    },
+    {
+    	"path" : "pages/home/video",
+    	"style" : 
+    	{
+          "navigationBarTitleText" : "视频",
+          "enablePullDownRefresh" : false,
+          "navigationStyle": "custom"
+    	}
     }
   ],
   "easycom": {

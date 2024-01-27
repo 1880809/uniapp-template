@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 Vue.prototype.$host = host;
 App.mpType = 'app'
 const app = new Vue({
-  ...App
+	...App
 })
 app.$mount()
 // #endif
@@ -27,19 +27,25 @@ export function createApp() {
 
 	let platform = uni.getSystemInfoSync().platform
 	let statusBarHeight = uni.getSystemInfoSync().statusBarHeight
-	uni.platform = platform
-	uni.statusBarHeight = statusBarHeight
+	let windowWidth = uni.getSystemInfoSync().windowWidth
+	let windowHeight = uni.getSystemInfoSync().windowHeight
 
-	uni.windowWidth = uni.getSystemInfoSync().windowWidth
-	uni.windowHeight = uni.getSystemInfoSync().windowHeight
+	// 在js中使用
+	uni.jdPlatform = platform
+	uni.jdStatusBarHeight = statusBarHeight
+	uni.jdWindowWidth = windowWidth
+	uni.jdWindowHeight = windowHeight
+	uni.jdToFixed = truncateToFixed
+
+	// 在html直接使用 也可以在js中使用 NVUE不支持
+	app.config.globalProperties.jdPlatform = platform
+	app.config.globalProperties.jdStatusBarHeight = statusBarHeight
+	app.config.globalProperties.$jdWindowWidth = windowWidth
+	app.config.globalProperties.$jdWindowHeight = windowHeight
+	app.config.globalProperties.jdToFixed = truncateToFixed
+
 	// #ifdef APP-PLUS
 	// #endif
-
-	uni.jdToFixed = truncateToFixed
-	app.config.globalProperties.jdToFixed = truncateToFixed
-	app.config.globalProperties.$platform = platform
-	app.config.globalProperties.$statusBarHeight = statusBarHeight
-
 // 兼容写法, 否则真机可能会找不到pinia
 	return {
 		Pinia,
