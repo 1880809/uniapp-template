@@ -1,4 +1,4 @@
-uniapp 快捷基础项目框架 下载下来就可以用
+uniapp 快捷基础项目框架 下载下来就可以用 建议uni_modules里的都重新 在插件市场安装一遍 插件可能会升级
 包括pinia http manifest uni_modules pages.json 和一些基础配置  
 包括 扫码 通讯录页面 国家地区选择  
 不需要的可以删掉  
