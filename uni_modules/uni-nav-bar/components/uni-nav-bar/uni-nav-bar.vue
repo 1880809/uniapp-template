@@ -6,7 +6,7 @@
 			<statusBars v-if="statusBar" />
 			<view :style="{ color: themeColor, backgroundColor: themeBgColor, height: navbarHeight }"
 				class="uni-navbar__header">
-				<view @tap="onClickLeft" class="uni-navbar__header-btns uni-navbar__header-btns-left" >
+				<view @tap="onClickLeft" class="uni-navbar__header-btns uni-navbar__header-btns-left" v-if="showLeft">
 					<!-- :style="{ width: leftIconWidth }" -->
 					<slot name="left">
 						<!-- <view class="uni-navbar__content_view" v-if="leftIcon.length > 0"> -->
@@ -115,6 +115,10 @@ export default {
 			default: false
 		},
     showRight: {
+      type: Boolean,
+      default: true
+    },
+    showLeft: {
       type: Boolean,
       default: true
     },
