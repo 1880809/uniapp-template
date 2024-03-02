@@ -5,7 +5,7 @@ import {Storage} from "/lib/utils";
 import cn from "/lib/lang/cn.js";
 import en from "/lib/lang/en.js";
 
-export const useApp = defineStore("app", () => {
+export const useAppStore = defineStore("app", () => {
   const appName = ref('');
   const appNameLogo = ref('');
 

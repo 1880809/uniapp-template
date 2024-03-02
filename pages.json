@@ -13,14 +13,6 @@
           "enablePullDownRefresh": false,
           "navigationStyle": "custom"
     	}
-    },
-    {
-      "path" : "pages/other/bankList",
-      "style" :
-      {
-        "navigationBarTitleText": "通讯录列表",
-        "enablePullDownRefresh": false
-      }
     }
   ],
   "easycom": {

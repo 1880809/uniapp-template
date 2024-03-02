@@ -1,6 +1,6 @@
 // request.js
 import { getPlatform, Storage, goToLinks } from "/lib/utils";
-import {useApp, useUserStore} from "/store";
+import {useAppStore, useUserStore} from "/store";
 
 // 使用的地方
 // async function getData() {
